@@ -34,7 +34,10 @@ export const DataGridRow: FC<Props> = ({ row, colsAmount, onRemoveItem }) => {
         </td>
       ))}
       {placeholders.map((_, idx) => (
-        <td key={idx} className={styles.cell} />
+        <td
+          key={idx}
+          className={cx(styles.cell, styles["cell--placeholder"])}
+        />
       ))}
     </tr>
   );

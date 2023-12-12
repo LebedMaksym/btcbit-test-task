@@ -8,6 +8,10 @@
   transition: background-color 0.3s ease-in-out;
 }
 
+.cell--placeholder:hover {
+  background-color: transparent !important;
+}
+
 .cell:hover {
   background-color: var(--bs-gray-200);
   border-radius: 4px;
