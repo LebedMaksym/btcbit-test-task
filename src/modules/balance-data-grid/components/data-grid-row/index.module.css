@@ -1,0 +1,32 @@
+.row {
+  border: transparent;
+}
+
+.cell {
+  min-width: 270px;
+  overflow: visible;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cell:hover {
+  background-color: var(--bs-gray-200);
+  border-radius: 4px;
+}
+
+.cell:hover .remove_button {
+  display: flex;
+}
+
+.remove_button {
+  display: none;
+  right: 15px;
+  padding: 0 !important;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black !important;
+  border-radius: 50% !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 10px;
+}
